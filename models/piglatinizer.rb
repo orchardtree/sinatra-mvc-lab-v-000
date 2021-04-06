@@ -2,6 +2,10 @@ require 'pry'
 
 class PigLatinizer
   
+  def initialize(text)
+    @text = text
+  end
+  
   def piglatinize(phrase)
     phrase_ary = phrase.split(" ")
     piglatin_ary = phrase_ary.collect do |word|
