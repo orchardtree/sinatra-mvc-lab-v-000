@@ -8,6 +8,7 @@ class PigLatinizer
     phrase_ary = @phrase.split(" ")
     piglatin_ary = phrase_ary.collect do |word|
       handle_piglatin(word)
+      binding.pry
     end
     piglatin_ary.join(" ")
   end
