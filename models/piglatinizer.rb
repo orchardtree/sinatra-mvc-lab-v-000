@@ -13,7 +13,6 @@ class PigLatinizer
       handle_piglatin(word)
     end
     piglatin_ary.join(" ")
-    end
   end
   
   def handle_piglatin(word)
