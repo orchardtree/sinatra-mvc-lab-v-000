@@ -21,6 +21,8 @@ class PigLatinizer
         new_word = letters_after(2) + first_letters(2) + "ay"
       when /\A[t][h]/
         new_word = letters_after(2) + first_letters(2) + "ay"
+      when /\A[s][k]/
+        new_word = letters_after(2) + first_letters(2) + "ay"        
       when /\A[s][p][r]/
         new_word = letters_after(3) + first_letters(3) + "ay"
       else
