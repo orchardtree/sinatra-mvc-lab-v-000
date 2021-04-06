@@ -14,7 +14,7 @@ class PigLatinizer
   end
   
   def handle_piglatin(word)
-    @word = word
+    @word = word.chomp
     case word
       when /\A[aeiouAEIOU]/
         new_word = letters_after(0) + "way"
