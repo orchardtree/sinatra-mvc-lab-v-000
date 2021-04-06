@@ -3,11 +3,11 @@ require 'pry'
 class PigLatinizer
   
   def piglatinize(phrase)
-    @phrase_ary = phrase.split(" ")
-    @piglatin_ary = @phrase_ary.collect do |word|
+    phrase_ary = phrase.split(" ")
+    piglatin_ary = phrase_ary.collect do |word|
       handle_piglatin(word)
     end
-    @piglatin_ary.join(" ")
+    piglatin_ary.join(" ")
   end
   
   def handle_piglatin(word)
