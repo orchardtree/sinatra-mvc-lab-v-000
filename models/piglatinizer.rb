@@ -17,7 +17,7 @@ class PigLatinizer
     case word
       when /\A[aeiouAEIOU]/
         new_word = letters_after(0) + "way"
-      when /\A[w][h]
+      when /\A[w][h]/
         new_word = letters_after(1) + first_letters(1) + "ay"
       when /\A[p](l|r)/
         new_word = letters_after(2) + first_letters(2) + "ay"
