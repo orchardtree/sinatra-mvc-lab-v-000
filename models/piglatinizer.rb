@@ -3,12 +3,9 @@ require 'pry'
 class PigLatinizer
   attr_accessor :phrase
   
-  def initialize(phrase = nil)
-    @phrase = phrase
-  end
-  
   def piglatinize(phrase)
-    phrase_ary = phrase.split(" ")
+    @phrase = phrase
+    phrase_ary = @phrase.split(" ")
     piglatin_ary = phrase_ary.collect do |word|
       handle_piglatin(word)
     end
