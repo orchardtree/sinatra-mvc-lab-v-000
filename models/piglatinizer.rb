@@ -2,7 +2,7 @@ require 'pry'
 
 class PigLatinizer
   
-  def initialize(text)
+  def initialize(text = nil)
     @text = text
   end
   
