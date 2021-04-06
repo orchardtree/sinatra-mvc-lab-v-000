@@ -5,7 +5,6 @@ class PigLatinizer
   
   def initialize(text = nil)
     @text = text
-    binding.pry
   end
   
   def piglatinize(text)
