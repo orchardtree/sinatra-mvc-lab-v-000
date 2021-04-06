@@ -6,12 +6,12 @@ class App < Sinatra::Base
   end
   
   get '/piglatinize' do
-    erb :PigLatinize
+    erb :pigLatinize
   end
   
   post '/piglatinize' do
     @piglatin = PigLatinizer.new.piglatinize(params[:user_phrase])
     erb :piglatinize
-    redirect to "/piglatinize"
+    redirect '/piglatinize'
   end
 end
