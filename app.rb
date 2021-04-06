@@ -6,7 +6,7 @@ class App < Sinatra::Base
   end
   
   post '/' do
-    redirect '/piglatinize'
+    erb :piglatinize
   end
   
   post '/piglatinize' do
