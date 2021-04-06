@@ -15,20 +15,20 @@ class PigLatinizer
   def handle_piglatin(word)
     @word = word.chomp
     case word
-      when /\A[aeiouAEIOU]/
+      when /\A[AEIOUaeiou]/
         new_word = letters_after(0) + "way"
-      when /\A[w][h]/
+      when /\A[Ww][h]/
         new_word = letters_after(2) + first_letters(2) + "ay"
-      when /\A[t][r]/
+      when /\A[Pp](l|r)/
         new_word = letters_after(2) + first_letters(2) + "ay"
-      when /\A[p](l|r)/
+      when /\A[Tt][h]/
         new_word = letters_after(2) + first_letters(2) + "ay"
-      when /\A[t][h]/
-        new_word = letters_after(2) + first_letters(2) + "ay"
-      when /\A[s][k]/
+      when /\A[Ss][k]/
         new_word = letters_after(2) + first_letters(2) + "ay"        
-      when /\A[s][p][r]/
+      when /\A[Ss][p][r]/
         new_word = letters_after(3) + first_letters(3) + "ay"
+      when /\A[Ss][t][r]/
+        new_word = letters_after(2) + first_letters(2) + "ay"
       else
         new_word = letters_after(1) + first_letters(1) + "ay"
     end    
