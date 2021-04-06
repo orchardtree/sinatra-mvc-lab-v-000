@@ -9,9 +9,7 @@ class PigLatinizer
     piglatin_ary = phrase_ary.collect do |word|
       handle_piglatin(word)
     end
-    test = piglatin_ary.join(" ")
-    test
-    #binding.pry
+    piglatin_ary.join(" ")
   end
   
   def handle_piglatin(word)
