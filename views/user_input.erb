@@ -7,7 +7,12 @@
   <body>
     <h1>Pig Latinizer</h1>
     <div class="container">
-      <%= yield %>
+      <form method="post" action="/">
+        <h2>Pig Latinizer!:</h2>
+        <textarea name="user_text"></textarea>
+        <br>
+        <button type="submit" value="submit">Submit</button>
+      </form>
     </div>
   </body>
 </html>
