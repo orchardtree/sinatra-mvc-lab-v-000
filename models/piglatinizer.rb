@@ -11,7 +11,7 @@ class PigLatinizer
     end
     test = piglatin_ary.join(" ")
     test
-    binding.pry
+    #binding.pry
   end
   
   def handle_piglatin(word)
