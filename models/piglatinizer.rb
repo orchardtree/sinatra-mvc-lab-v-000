@@ -8,7 +8,7 @@ class PigLatinizer
   end
   
   def piglatin
-    piglatinize(phrase)
+    @t
   end
   
   def piglatinize(phrase)
@@ -16,7 +16,7 @@ class PigLatinizer
     piglatin_ary = phrase_ary.collect do |word|
       handle_piglatin(word)
     end
-    piglatin_ary.join(" ")
+    @t = piglatin_ary.join(" ")
   end
   
   def handle_piglatin(word)
